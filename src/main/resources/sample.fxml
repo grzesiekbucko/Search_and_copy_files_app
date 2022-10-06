@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="420.0" prefWidth="650.0">
+         <children>
+            <Pane layoutY="2.0" prefHeight="420.0" prefWidth="650.0">
+               <children>
+                  <Button id="selectFile" fx:id="selectFile" layoutX="237.0" layoutY="260.0" onAction="#fileSelector" prefHeight="35.0" prefWidth="178.0" text="Wgraj plik" />
+                  <Label id="label" fx:id="label" alignment="CENTER" layoutX="12.0" layoutY="65.0" prefHeight="35.0" prefWidth="627.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="create_folder" layoutX="199.0" layoutY="193.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="135.0" text="kopiuj do folderów" />
+                  <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="650.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem fx:id="info" mnemonicParsing="false" onAction="#showInfo" text="Info" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <Button id="selectFolder" fx:id="selectFolder" layoutX="258.0" layoutY="130.0" mnemonicParsing="false" onAction="#folderSelector" prefHeight="25.0" prefWidth="135.0" text="Wybierz folder" />
+                  <CheckBox fx:id="change_file_name" layoutX="363.0" layoutY="193.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="135.0" text="zmien nazwy" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
